@@ -1,0 +1,98 @@
+@import 'common-color.css';
+@import './component/button.css';
+@import './component/product.css';
+@import './component/nav.css';
+@import './component/sidebar.css';
+@import './component/footer.css';
+@import 'about.css';
+@import 'home.css';
+html {
+    font-size: 10px;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+    background: $background;
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 3rem;
+    &--trending {
+        padding: 1.5rem 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 1.5rem;
+    }
+}
+
+.product-wrapper {
+    grid-column: 1/10;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.5rem 1.5rem;
+}
+
+.product-trending {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem 1.5rem;
+}
+
+.product-feature {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-row: 2;
+    grid-gap: 1.5rem;
+
+}
+
+.sidebar {
+    grid-column: 10/13;
+}
+
+.bar-title {
+    background: $blue2;
+    font-size: 1.6rem;
+    color: $white;
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+    line-height:2.5;
+    margin-bottom: 1.5rem;
+}

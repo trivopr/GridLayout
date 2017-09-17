@@ -1,0 +1,15 @@
+
+
+
+h1 {
+  color: blue;
+}
+
+
+@media (min-width: 360px) {
+  h1 {
+    a {
+      color: $color2;
+    }
+  }
+}
